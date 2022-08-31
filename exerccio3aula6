@@ -1,0 +1,30 @@
+#include<locale.h>
+#include<stdio.h>
+#include<time.h>
+int main(){
+	setlocale(LC_ALL,"");
+	srand(time(NULL));	
+	int v[10];
+	int i, num, encontrado = 0;
+//Gerar os n�meros ale�torios para o vetor
+	for(i=0; i <10; i++){
+	v[i] = rand();	
+    printf("[%d]%d\n",i,v[i]);
+}
+//entradas 
+    printf("Digite um n�mero inteiro\n");
+    scanf("%d",&num);
+//processamento e sa�da
+    i=0;
+    while(!encontrado){
+        if(v[i]==num)
+             encontrado = 1;
+        i++;
+        if(i == 10) break;
+    } 
+     //sa�da
+	if(encontrado) printf("Encontrei");
+    else printf("N�o encontrei");
+
+}
+
