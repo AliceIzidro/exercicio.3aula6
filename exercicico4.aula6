@@ -1,0 +1,28 @@
+inclui < stdio.h >
+# inclui < locale.h >
+# inclui < time.h >
+int  main (){
+	setlocale (LC_ALL, " " );
+	srand ( tempo ( NULL ));
+	int v[ 10 ];
+	int i, num, encontrado = 0 ;
+	// Gerar os n�meros aleat�rios para o vetor
+	for (i = 0 ; i < 10 ; i++){
+		v[i] = rand ();
+		printf ( " [ %d ] %d \n " ,i,v[i]);
+	}
+	// Entrada
+	printf ( " Digite um numero inteiro \n " );
+	scanf ( " %d " ,&num);
+	// Processamento
+	e = 0 ;
+	while (!encontrado){
+		if (v[i] == num)
+			encontrado = 1 ;
+		i++;
+		se (i == 10 ) quebrar ;
+	}
+	// sa�da
+	if (encontrado) printf ( " Encontrei " );
+	else  printf ( " N�o encontrei " );
+}
